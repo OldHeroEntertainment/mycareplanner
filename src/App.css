@@ -24,7 +24,22 @@ h3 {
 
     .app {
         max-width: 500px;
-        border: #E1E2EC 1px solid;
+        border: #E1E2EC 1px solid; 
+        background-color: #F7F7F7;
+    }
+}
+
+@media screen and (min-width: 450px) and (min-height: 1000px) {
+    #root {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app {
+        height: 100svh;
+        max-width: 500px;
+        border: #E1E2EC 1px solid; 
+        background-color: #F7F7F7;
     }
 }
 

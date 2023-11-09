@@ -713,7 +713,7 @@ class App extends React.Component<AppProps, AppState> {
                     <Route path="/">
                         <SessionProtected isLoggedIn={!this.state.isLogout}>
                             <TabContext value={this.state.mainTabIndex}>
-                                <Box sx={{ bgcolor: '#F7F7F7', width: '100%' }}>
+                                <Box sx={{  width: '100%' }}> 
                                     <Paper variant="elevation" sx={{ width: '100%', maxWidth: '500px', position: 'fixed', borderRadius: 0, bottom: 0, left: 'auto', right: 'auto' }} elevation={3}>
                                         <TabList onChange={(event,value)=>this.updateLogMainTab(event,value)} variant="fullWidth" centered sx={{
                                             "& .Mui-selected, .Mui-selected > svg":
@@ -771,7 +771,7 @@ class App extends React.Component<AppProps, AppState> {
                                             <h4 className="title">Assessment Results</h4>
                                             <p>Coming soon...</p>
                                         </TabPanel> */}
-                                        <TabPanel value="11">
+                                        <TabPanel value="11" sx={{ padding: '0px 15px' }}>
                                             <ImmunizationList fhirDataCollection={this.state.fhirDataCollection} />
                                         </TabPanel>
                                     </TabContext>
